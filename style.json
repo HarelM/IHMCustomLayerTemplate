@@ -14,20 +14,24 @@
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
   "layers": [
      {
-        "id": "flud-label",
-        "type": "symbol",
-        "source": "points",
-        "layout": {
-          "text-field": ["get", "text"],
-          "text-font": ["Open Sans Cond Bold"],
-          "text-size": 16,
-          "text-offset": [0, 1.25]        
-        },
-        "paint": {
-          "text-color": "rgba(161, 127, 86, 1)",
-          "text-halo-color": "rgba(255, 255, 255,0.8)",
-          "text-halo-width": 1.5
-        }
-     }
+      "id": "name-water-point",
+      "type": "symbol",
+      "source": "points",
+      "layout": {
+        "text-field": ["get", "text"],
+        "text-font": ["Open Sans Cond Bold"],
+        "text-anchor": "top",
+        "text-size": 100,
+        "text-letter-spacing": 0.2,
+        "text-ignore-placement": true,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#ff0000",
+        "text-halo-color": "white",
+        "text-halo-width": 1.5,
+        "text-translate": [0, 6]
+      }
+    }
   ]
 }
