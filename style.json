@@ -16,11 +16,14 @@
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "layers": [
     {
-      "id": "name",
+      "id": "fluds-text",
       "type": "symbol",
       "metadata": {"IHM:overlay": true},
       "source": "points",
-      "layout": {"text-field": ["get", "text"], "visibility": "visible"}
+      "layout": {
+        "text-field": ["get", "text"], 
+        "visibility": "visible"
+      }
     }
   ],
   "id": "fluds"
