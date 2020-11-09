@@ -18,6 +18,7 @@
     {
       "id": "water-area-name",
       "type": "symbol",
+      "metadata": {"IHM:overlay": true},
       "source": "fludpoints",
       "layout": {
         "text-field": ["get", "text"],
