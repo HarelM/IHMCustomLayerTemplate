@@ -18,7 +18,7 @@
         "type": "symbol",
         "source": "points",
         "layout": {
-          "text-field": ['get', 'text'],
+          "text-field": ["get", "text"],
           "text-font": ["Open Sans Cond Bold"],
           "text-size": 16,
           "text-letter-spacing": 0.15,
