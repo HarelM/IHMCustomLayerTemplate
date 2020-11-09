@@ -27,10 +27,10 @@
         "text-size": 18,
         "text-letter-spacing": 0.3,
         "text-max-width": 5,
-        "text-offset": [0, -2]
+        "text-offset": [0, 3]
       },
       "paint": {
-        "text-color": "#125595",
+        "text-color": "blue",
         "text-halo-color": "white",
         "text-halo-width": 1.5,
         "text-halo-blur": 1
