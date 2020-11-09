@@ -7,7 +7,7 @@
     "openmaptiles:version": "3.x"
   },
   "sources": {
-    "points": {
+    "fludpoints": {
       "type": "geojson",
       "data": "https://raw.githack.com/HarelM/IHMMapboxMapExample/main/source.geojson"
     }
@@ -16,13 +16,22 @@
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "layers": [
     {
-      "id": "fluds-text",
+      "id": "water-area-name",
       "type": "symbol",
-      "metadata": {"IHM:overlay": true},
-      "source": "points",
+      "source": "fludpoints",
       "layout": {
-        "text-field": ["get", "text"], 
-        "visibility": "visible"
+        "text-field": ["get", "text"],
+        "symbol-placement": "point",
+        "text-font": ["Open Sans Cond Bold"],
+        "text-size": 18,
+        "text-letter-spacing": 0.3,
+        "text-max-width": 5
+      },
+      "paint": {
+        "text-color": "#125595",
+        "text-halo-color": "white",
+        "text-halo-width": 1.5,
+        "text-halo-blur": 1
       }
     }
   ],
