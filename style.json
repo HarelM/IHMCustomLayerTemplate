@@ -7,7 +7,7 @@
   "sources": {
     "points": {
       "type": "geojson",
-      "data": "https://cors-anywhere.herokuapp.com/https://github.com/HarelM/IHMMapboxMapExample/raw/main/source.geojson"
+      "https://raw.githack.com/HarelM/IHMMapboxMapExample/main/source.geojson"
     }
   },
   "sprite": "https://israelhikingmap.github.io/VectorMap/Icons/publish/sprite",
