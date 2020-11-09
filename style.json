@@ -2,7 +2,9 @@
   "version": 8,
   "name": "Fluds",
   "metadata": {
-    "owner": "Harel Mazor"
+    "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
   },
   "sources": {
     "points": {
@@ -10,28 +12,15 @@
       "data": "https://raw.githack.com/HarelM/IHMMapboxMapExample/main/source.geojson"
     }
   },
-  "sprite": "https://israelhikingmap.github.io/VectorMap/Icons/publish/sprite",
-  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "layers": [
-     {
-      "id": "name-water-point",
+    {
+      "id": "name",
       "type": "symbol",
       "source": "points",
-      "layout": {
-        "text-field": "test!",
-        "text-font": ["Open Sans Cond Bold"],
-        "text-anchor": "top",
-        "text-size": 100,
-        "text-letter-spacing": 0.2,
-        "text-ignore-placement": true,
-        "text-optional": true
-      },
-      "paint": {
-        "text-color": "#ff0000",
-        "text-halo-color": "white",
-        "text-halo-width": 1.5,
-        "text-translate": [0, 6]
-      }
+      "layout": {"text-field": ["get", "text"], "visibility": "visible"}
     }
-  ]
+  ],
+  "id": "fluds"
 }
