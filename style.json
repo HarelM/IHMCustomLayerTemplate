@@ -1,25 +1,24 @@
 {
   "version": 8,
-  "name": "Fluds",
+  "name": "Floods",
   "metadata": {
-    "maputnik:license": "https://github.com/maputnik/osm-liberty/blob/gh-pages/LICENSE.md",
     "maputnik:renderer": "mbgljs",
     "openmaptiles:version": "3.x"
   },
   "sources": {
-    "fludpoints": {
+    "floodpoints": {
       "type": "geojson",
       "data": "https://raw.githack.com/HarelM/IHMMapboxMapExample/main/source.geojson"
     }
   },
-  "sprite": "https://maputnik.github.io/osm-liberty/sprites/osm-liberty",
+  "sprite": "",
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
   "layers": [
     {
       "id": "water-area-name",
       "type": "symbol",
       "metadata": {"IHM:overlay": true},
-      "source": "fludpoints",
+      "source": "floodpoints",
       "layout": {
         "text-field": ["get", "text"],
         "symbol-placement": "point",
@@ -37,5 +36,5 @@
       }
     }
   ],
-  "id": "fluds"
+  "id": "floods"
 }
