@@ -12,7 +12,7 @@
     }
   },
   "sprite": "",
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key={key}",
+  "glyphs": "https://israelhikingmap.osm.org.il/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "water-area-name",
@@ -33,6 +33,15 @@
         "text-halo-color": "white",
         "text-halo-width": 1.5,
         "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "water-area-icon",
+      "type": "symbol",
+      "metadata": {"IHM:overlay": true},
+      "source": "floodpoints",
+      "layout": {
+        "icon-image": "https://avatars.githubusercontent.com/u/13288969?s=640&v=4"
       }
     }
   ],
