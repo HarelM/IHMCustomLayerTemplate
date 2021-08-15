@@ -17,7 +17,6 @@
     {
       "id": "water-area-name",
       "type": "symbol",
-      "metadata": {"IHM:overlay": true},
       "source": "floodpoints",
       "layout": {
         "text-field": ["get", "text"],
@@ -38,7 +37,6 @@
     {
       "id": "water-area-icon",
       "type": "symbol",
-      "metadata": {"IHM:overlay": true},
       "source": "floodpoints",
       "layout": {
         "icon-image": "https://avatars.githubusercontent.com/u/13288969?s=64&v=4"
