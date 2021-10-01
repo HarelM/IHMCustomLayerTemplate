@@ -15,6 +15,12 @@
   "glyphs": "https://israelhikingmap.osm.org.il/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
+      "id": "bg",
+      "type": "background",
+      "metadata": {"IHM:overlay": false},
+      "paint": {"background-color": "blue"}
+    },
+    {
       "id": "water-area-name",
       "type": "symbol",
       "source": "floodpoints",
