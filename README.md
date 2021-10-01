@@ -16,3 +16,9 @@ Walkthrough
 2. Create a style.json file with the layer styling that refers to your geojson using the CORS-enabled link. 
 3. Upload the style.json to GitHub and create a CORS-enabled link using [Githack](https://raw.githack.com/).
 4. In [IHM site](https://israelhiking.osm.org.il), add a new layer and paste the link to the style.json file.
+
+
+
+Check out the files in this repository to see how this can be done.
+You can use the following address inside IHM site's custom layer control to see a layer with the IHM icon somewhere in the south of israel https://raw.githubusercontent.com/HarelM/IHMMapboxMapExample/main/style.json
+Surf to https://israelhiking.osm.org.il/map/9.39/31.6277/35.2993 to see the icon
