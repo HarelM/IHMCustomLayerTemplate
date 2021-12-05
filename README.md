@@ -1,4 +1,4 @@
-# IHMMapboxMapExample
+# IHM Custom Layer Template
 
 An example for a custom layer for the [IHM site](https://israelhiking.osm.org.il).
 
